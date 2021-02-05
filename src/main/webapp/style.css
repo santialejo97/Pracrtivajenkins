@@ -1,0 +1,81 @@
+:root {
+  --colorfondo: #5bbfcf;
+  --recuadro: #edc532;
+  --logo: #32c614;
+  --letra: #09134d;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Sriracha", cursive;
+  font-size: 1.6rem;
+  line-height: 2;
+  background-color: var(--colorfondo);
+}
+
+/* globales */
+
+.contenedor {
+  max-width: 1200rem;
+  width: 95%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+h1,
+h2 {
+  color: var(--blacon);
+  margin: 0;
+}
+
+img {
+  border-radius: 25%;
+}
+
+/* Centro */
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-style {
+  display: flex;
+  padding: 2rem;
+  gap: 3rem;
+  background-color: var(--recuadro);
+  border-radius: 4rem;
+}
+
+.contenedor__info {
+  padding: 3rem;
+  border: solid 4px var(--colorfondo);
+  border-radius: 3rem;
+  text-align: center;
+}
+
+.devops-logo {
+  text-transform: uppercase;
+  font-size: 10rem;
+  color: var(--logo);
+}
+
+.devops {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  font-size: 3rem;
+  color: var(--letra);
+  text-transform: uppercase;
+}
+
+.devops span {
+  font-size: 5rem;
+  text-transform: none;
+}
